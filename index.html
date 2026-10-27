@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tiffin Lane – Home-style food, made fresh daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="bar">
+  <div class="logo">Tiffin Lane</div>
+  <a class="nav" href="#menu">Menu</a><a class="nav" href="#about">About</a>
+  <button class="cartbtn" id="open" aria-label="Open your cart">Cart<span id="count">0</span></button>
+</div></header>
+
+<main>
+  <section class="hero">
+    <div>
+      <h1>Home-style food, cooked fresh every morning.</h1>
+      <p>Lunch boxes, snacks and sweets made in small batches. Order by 11 am for same-day delivery or pickup.</p>
+      <a class="cta" href="#menu">Order from the menu</a>
+    </div>
+    <div class="board">
+      <h2>Today at the counter</h2>
+      <dl><dt>Open</dt><dd>8 am to 8 pm, every day</dd><dt>Delivery</dt><dd>Free above ₹400, else ₹40</dd><dt>Pickup</dt><dd>Ready in 25 minutes</dd></dl>
+    </div>
+  </section>
+
+  <h2 class="sec" id="menu">Menu</h2>
+  <div class="chips" id="chips" role="group" aria-label="Filter menu by category"></div>
+  <div class="grid" id="grid"></div>
+
+  <section class="about" id="about">
+    <div><b>Small batches</b><p>We cook in the morning and sell out by evening, so nothing sits around.</p></div>
+    <div><b>Plain ingredients</b><p>Rice, lentils, vegetables, coconut and spices. No colours or preservatives.</p></div>
+    <div><b>Fair pricing</b><p>Every price on this page is what you pay, with no hidden fees at checkout.</p></div>
+  </section>
+</main>
+<footer>Tiffin Lane · Sample shop. Orders placed here are not sent anywhere.</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside id="drawer" aria-label="Your order" aria-hidden="true">
+  <div class="dh"><h2 id="title">Your cart</h2><button class="x" id="close" aria-label="Close cart">✕</button></div>
+  <div class="db" id="body"></div>
+  <div class="df" id="foot"></div>
+</aside>
+
+<script src="js/app.js"></script>
+</body>
+</html>
